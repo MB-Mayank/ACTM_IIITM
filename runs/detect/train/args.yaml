@@ -1,12 +1,7 @@
 task: detect
 mode: train
 model: yolo11n.pt
-data:
-  train: ../train/images
-  val: ../valid/images
-  nc: 1
-  names:
-  - Vehicle
+data: yaml.yaml
 epochs: 100
 time: null
 patience: 50
